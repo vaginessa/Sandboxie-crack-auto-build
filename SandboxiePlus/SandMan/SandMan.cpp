@@ -1365,7 +1365,7 @@ void CSandMan::OnLogSbieMessage(quint32 MsgCode, const QStringList& MsgData, qui
 		m_pPopUpWindow->AddLogMessage(Message, MsgCode, MsgData, ProcessId);
 }
 
-bool CSandMan::CheckCertificate() 
+bool CSandMan::CheckCertificate(QWidget* pWidget) 
 {
 	if ((g_FeatureFlags & CSbieAPI::eSbieFeatureCert) != 0)
 		return true;
@@ -1375,7 +1375,7 @@ bool CSandMan::CheckCertificate()
 	//	return false;
 	//}
 
-	QMessageBox msgBox(this);
+	QMessageBox msgBox(pWidget);
 	msgBox.setTextFormat(Qt::RichText);
 	msgBox.setIcon(QMessageBox::Information);
 	msgBox.setWindowTitle("Sandboxie-Plus");

@@ -252,7 +252,7 @@ void COptionsWindow::SaveAdvanced()
 void COptionsWindow::OnIsolationChanged()
 {
 	if (ui.chkPrivacy->isChecked() || ui.chkUseSpecificity->isChecked())
-		theGUI->CheckCertificate();
+		theGUI->CheckCertificate(this);
 
 	UpdateBoxIsolation();
 
@@ -275,7 +275,7 @@ void COptionsWindow::UpdateBoxIsolation()
 	ui.chkRawDiskRead->setEnabled(!ui.chkNoSecurityIsolation->isChecked()); //  without isolation only user mode
 	ui.chkRawDiskNotify->setEnabled(!ui.chkNoSecurityIsolation->isChecked());
 
-	ui.chkDropRights->setEnabled(!ui.chkNoSecurityIsolation->isChecked() && !theAPI->IsRunningAsAdmin());
+	UpdateBoxSecurity();
 
 	ui.chkBlockNetShare->setEnabled(!ui.chkNoSecurityFiltering->isChecked());
 
@@ -284,6 +284,19 @@ void COptionsWindow::UpdateBoxIsolation()
 	ui.chkPrintToFile->setEnabled(!ui.chkBlockSpooler->isChecked() && !ui.chkNoSecurityFiltering->isChecked());
 
 	ui.chkCloseClipBoard->setEnabled(!ui.chkNoSecurityIsolation->isChecked());
+	ui.chkVmRead->setEnabled(!ui.chkNoSecurityIsolation->isChecked());
+
+
+	if (ui.chkNoSecurityIsolation->isChecked()) {
+		ui.chkCloseForBox->setEnabled(false);
+		ui.chkCloseForBox->setChecked(false);
+		ui.chkNoOpenForBox->setEnabled(false);
+		ui.chkNoOpenForBox->setChecked(false);
+	}
+	else {
+		ui.chkCloseForBox->setEnabled(true);
+		ui.chkNoOpenForBox->setEnabled(true);
+	}
 }
 
 void COptionsWindow::OnSysSvcChanged()

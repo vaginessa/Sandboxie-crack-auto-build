@@ -61,7 +61,7 @@ public:
 	QIcon				GetBoxIcon(int boxType, bool inUse = false, bool inBusy = false);
 	QString				GetBoxDescription(int boxType);
 
-	bool				CheckCertificate();
+	bool				CheckCertificate(QWidget* pWidget);
 
 	void				UpdateTheme();
 

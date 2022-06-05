@@ -1313,6 +1313,7 @@ _FX NTSTATUS Api_QueryDriverInfo(PROCESS* proc, ULONG64* parms)
 
                 FeatureFlags |= SBIE_FEATURE_FLAG_CERTIFIED;
 
+                FeatureFlags |= SBIE_FEATURE_FLAG_SECURITY_MODE;
                 FeatureFlags |= SBIE_FEATURE_FLAG_PRIVACY_MODE;
                 FeatureFlags |= SBIE_FEATURE_FLAG_COMPARTMENTS;
             }
