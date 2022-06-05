@@ -519,14 +519,14 @@
                   <string>Protect the system from sandboxed processes</string>
                  </property>
                  <property name="text">
-                  <string>Security Enhancements</string>
+                  <string>Security enhancements</string>
                  </property>
                 </widget>
                </item>
                <item row="2" column="2" colspan="4">
                 <widget class="QCheckBox" name="chkLockDown">
                  <property name="text">
-                  <string>Use the original Token only for approved NT System Calls</string>
+                  <string>Use the original token only for approved NT system calls</string>
                  </property>
                 </widget>
                </item>
@@ -587,14 +587,14 @@
                <item row="3" column="2" colspan="4">
                 <widget class="QCheckBox" name="chkRestrictDevices">
                  <property name="text">
-                  <string>Restrict access driver/device access to approved once only</string>
+                  <string>Restrict driver/device access to only approved ones</string>
                  </property>
                 </widget>
                </item>
                <item row="1" column="1" colspan="5">
                 <widget class="QCheckBox" name="chkSecurityMode">
                  <property name="text">
-                  <string>Enable all Security Enhancements (make security hardened box)</string>
+                  <string>Enable all security enhancements (make security hardened box)</string>
                  </property>
                 </widget>
                </item>
@@ -777,7 +777,7 @@
                <item row="12" column="2">
                 <widget class="QCheckBox" name="chkVmReadNotify">
                  <property name="text">
-                  <string>Issue message 2111 when a process access is denided</string>
+                  <string>Issue message 2111 when a process access is denied</string>
                  </property>
                 </widget>
                </item>
