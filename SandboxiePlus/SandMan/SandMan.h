@@ -217,7 +217,6 @@ private:
 
 	void				HandleMaintenance(SB_RESULT(void*) Status);
 
-	void				SetViewMode(bool bAdvanced);
 
 	void				LoadState();
 	void				StoreState();
