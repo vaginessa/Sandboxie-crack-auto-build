@@ -69,6 +69,7 @@
         <file>IconOffCx.png</file>
         <file>Actions/Monitor.png</file>
         <file>SideLogo.png</file>
+        <file>Actions/Refresh.png</file>
     </qresource>
     <qresource prefix="/Boxes">
         <file alias="Empty3">Boxes/sandbox-b-empty.png</file>
@@ -86,5 +87,11 @@
         <file alias="Empty6">Boxes/sandbox-o-empty.png</file>
         <file alias="Full6">Boxes/sandbox-o-full.png</file>
         <file alias="Busy">Boxes/BusyOverlay.png</file>
+    </qresource>
+    <qresource prefix="/Assets">
+        <file>Advanced.png</file>
+        <file>AdvancedD.png</file>
+        <file>Simple.png</file>
+        <file>SimpleD.png</file>
     </qresource>
 </RCC>

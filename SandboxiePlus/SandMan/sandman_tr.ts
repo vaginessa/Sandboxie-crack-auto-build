@@ -3522,6 +3522,10 @@ Please note that this values are currently user specific and saved globally for 
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Admin Rights</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Open Windows Credentials Store (user mode)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3686,26 +3690,6 @@ The process match level has a higher priority than the specificity and describes
     </message>
     <message>
         <source>Here you can specify actions to be executed automatically on various box events.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Security</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Security enhancements</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Use the original token only for approved NT system calls</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Restrict driver/device access to only approved ones</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Enable all security enhancements (make security hardened box)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
